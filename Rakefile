@@ -7,19 +7,18 @@ require 'lib/garb/version'
 task :default => :test
 
 spec = Gem::Specification.new do |s|
-  s.name              = 'garb'
+  s.name              = 'garb-no-activesupport'
   s.version           = Garb::Version.to_s
   s.has_rdoc          = false
   s.rubyforge_project = 'viget'
   s.summary           = "Google Analytics API Ruby Wrapper"
-  s.authors           = ['Tony Pitale']
-  s.email             = 'tony.pitale@viget.com'
-  s.homepage          = 'http://github.com/vigetlabs/garb'
+  s.authors           = ['Tony Pitale', 'jonah honeyman']
+  s.email             = 'gewglestolemypass@gmail.com'
+  s.homepage          = 'http://github.com/jonuts/garb'
   s.files             = %w(README.md Rakefile) + Dir.glob("lib/**/*")
   s.test_files        = Dir.glob("test/**/*")
 
   s.add_dependency("happymapper", [">= 0.3.0"])
-  s.add_dependency("activesupport", [">= 2.2.0"])
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|
