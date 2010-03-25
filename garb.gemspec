@@ -1,13 +1,8 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-<<<<<<< HEAD
-  s.name = %q{garb-no-activesupport}
-  s.version = "0.7.3"
-=======
   s.name = %q{garb}
   s.version = "0.7.4"
->>>>>>> 94a08fc429bd54b53cd8225a06b15f316bcced0c
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tony Pitale"]
