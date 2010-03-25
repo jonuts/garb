@@ -18,7 +18,7 @@ spec = Gem::Specification.new do |s|
   s.files             = %w(README.md Rakefile) + Dir.glob("lib/**/*")
   s.test_files        = Dir.glob("test/**/*")
 
-  s.add_dependency("happymapper", [">= 0.3.0"])
+  s.add_dependency("crack", [">= 0.1.6"])
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|
