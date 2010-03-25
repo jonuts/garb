@@ -16,5 +16,9 @@ class String
       tr("-", "_").
       downcase
   end
+
+  def demodulize
+    gsub(/^.*::/, '')
+  end
 end
 
